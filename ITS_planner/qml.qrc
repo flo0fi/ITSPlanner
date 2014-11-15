@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>Timetable.qml</file>
+    </qresource>
+    <qresource prefix="/images">
+        <file alias="ITSlogo.png">ITSlogo.png</file>
+        <file>approve9.png</file>
+        <file>circular191.png</file>
+        <file>config12.png</file>
+    </qresource>
+</RCC>
