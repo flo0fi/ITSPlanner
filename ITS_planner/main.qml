@@ -8,7 +8,7 @@ Window {
     visible: true
     width: 360
     height: 560
-    title: "ITS Planner"
+    title: "ITS Planners"
     color: "#0cb997"
 
     MouseArea {
@@ -27,7 +27,6 @@ Window {
             width: 147
             height: 165
             text: qsTr("ITS")
-            anchors.verticalCenter: parent.verticalCenter
             anchors.horizontalCenter: parent.horizontalCenter
             font.family: uniSans.name
             font.pointSize: 80
@@ -81,6 +80,7 @@ Image {
     y: 32
     width: 170
     height: 170
+    anchors.horizontalCenter: parent.horizontalCenter
     z: 4
     fillMode: Image.PreserveAspectFit
     source: "qrc:/images/ITSlogo.png"
@@ -101,7 +101,10 @@ Image {
     source: "qrc:/images/circular191.png"
     MouseArea {
         id: alarms_goto
-        anchors.fill: parent
+        anchors.horizontalCenter: parent.horizontalCenter
+        anchors.left: parent.left
+        anchors.bottom: parent.bottom
+        anchors.top: parent.top
     }
 
     Text {
@@ -127,7 +130,10 @@ Image {
 
     MouseArea {
         id: timetables_goto
-        anchors.fill: parent
+        anchors.horizontalCenter: parent.horizontalCenter
+        anchors.left: parent.left
+        anchors.bottom: parent.bottom
+        anchors.top: parent.top
         onClicked: {
             var component = Qt.createComponent("timetable.qml");
             win = component.createObject(timetable);
@@ -157,7 +163,10 @@ Image {
     sourceSize.width: 64
     MouseArea {
         id: settings_goto
-        anchors.fill: parent
+        anchors.horizontalCenter: parent.horizontalCenter
+        anchors.left: parent.left
+        anchors.bottom: parent.bottom
+        anchors.top: parent.top
     }
 
     Text {
