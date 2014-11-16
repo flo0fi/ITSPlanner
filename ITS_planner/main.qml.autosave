@@ -187,17 +187,6 @@ FontLoader{
 
 }
 
-ToolButton {
-    id: toolButton1
-    x: 24
-    y: 312
-    width: 68
-    height: 71
-    antialiasing: true
-    iconSource: "qrc:/images/approve9.png"
-    iconName: qsTr("")
-}
-
 
 
 }
