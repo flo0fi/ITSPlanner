@@ -27,6 +27,7 @@ Window {
             width: 147
             height: 165
             text: qsTr("ITS")
+            anchors.horizontalCenterOffset: 1
             anchors.horizontalCenter: parent.horizontalCenter
             font.family: uniSans.name
             font.pointSize: 80

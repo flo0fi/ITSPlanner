@@ -1,7 +1,6 @@
 <RCC>
     <qresource prefix="/">
         <file>main.qml</file>
-        <file>Timetable.qml</file>
     </qresource>
     <qresource prefix="/images">
         <file alias="ITSlogo.png">ITSlogo.png</file>
